@@ -34,7 +34,7 @@ function startListening(api) {
 }
 
 // Log in and start the bot
-login({ appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8')) }, (err, api) => {
+login({ appState: JSON.parse(fs.readFileSync('FbSpark.json', 'utf8')) }, (err, api) => {
     if (err) return console.error(err);
 
     api.setOptions({ listenEvents: true });
